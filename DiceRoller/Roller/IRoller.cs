@@ -8,7 +8,7 @@ namespace DiceRoller.Roller
 {
     internal interface IRoller
     {
-        bool Roll(int target);
+        bool Success(int target);
     }
 
     abstract class RollerBase : IRoller
@@ -20,34 +20,95 @@ namespace DiceRoller.Roller
             Rand = new Random((int)(DateTime.Now.Ticks));
         }
 
-        public abstract bool Roll(int target);
+        public abstract bool Success(int target);
+
+        protected int GetDiceRoll()
+        {
+            return Rand.Next(1, 7);
+        }
+
+        protected abstract bool RollDices(int target);
     }
 
     class NormalChargeRoller : RollerBase
     {
 
-        public override bool Roll(int target)
+        protected override bool RollDices(int target)
         {
-            var a = Rand.Next(6)+1;
-            var b = Rand.Next(6)+1;
+            var a = GetDiceRoll();
+            var b = GetDiceRoll();
             return (a + b) >= target;
+        }
+
+        public override bool Success(int target)
+        {
+            return RollDices(target);
+        }
+
+    }
+
+    class RerollableChargeRoller : NormalChargeRoller
+    {
+
+        public override bool Success(int target)
+        {
+            var r = RollDices(target);
+            return r ? r : RollDices(target);
         }
     }
 
-    class RerollableChargeRoller : RollerBase
+    class RerollOneDiceChargeRoller : NormalChargeRoller
     {
-
-        public override bool Roll(int target)
+        protected override bool RollDices(int target)
         {
-            var a = Rand.Next(6) + 1;
-            var b = Rand.Next(6) + 1;
-            if ((a + b) < target)
+            var a = GetDiceRoll();
+            var b = GetDiceRoll();
+
+            var r = a + b;
+
+            if (r >= target)
             {
-                a = Rand.Next(6) + 1;
-                b = Rand.Next(6) + 1;
+                return true;
             }
 
-            return (a + b) >= target;
+            if (a <= b)
+            {
+                a = GetDiceRoll();
+            }
+            else
+            {
+                b = GetDiceRoll();
+            }
+
+            return (a+b) >= target;
         }
+    }
+
+
+    class ThreeD6PickHighestChargeRoller : NormalChargeRoller
+    {
+
+        protected override bool RollDices(int target)
+        {
+            var a = GetDiceRoll();
+            var b = GetDiceRoll();
+            var c = GetDiceRoll();
+
+            var r = a + b + c;
+
+            var min = Math.Min(Math.Min(a, b), c);
+            return (r-min) >= target;
+        }
+    }
+
+    class ThreeD6PickHighestRerollableChargeRoller : ThreeD6PickHighestChargeRoller
+    {
+  
+        public override bool Success(int target)
+        {
+            var r = RollDices(target);
+            return r ? r : RollDices(target);
+        }
+
     }
 }
