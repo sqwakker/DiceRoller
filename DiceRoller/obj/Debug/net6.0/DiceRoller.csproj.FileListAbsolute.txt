@@ -1,0 +1,15 @@
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.exe
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.deps.json
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.runtimeconfig.json
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.dll
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.pdb
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.csproj.AssemblyReference.cache
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.GeneratedMSBuildEditorConfig.editorconfig
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.AssemblyInfoInputs.cache
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.AssemblyInfo.cs
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.csproj.CoreCompileInputs.cache
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.dll
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\refint\DiceRoller.dll
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.pdb
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.genruntimeconfig.cache
+C:\BI-Apps\Source\Personal\Lab\DiceRoller\DiceRoller\obj\Debug\net6.0\ref\DiceRoller.dll
