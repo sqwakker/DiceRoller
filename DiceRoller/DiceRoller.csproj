@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CsvHelper.Excel" Version="1.0.6" />
+    <PackageReference Include="CsvHelper.Excel.Core" Version="27.2.1" />
+  </ItemGroup>
+
 </Project>

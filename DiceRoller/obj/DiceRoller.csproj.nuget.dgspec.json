@@ -43,6 +43,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "CsvHelper.Excel": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "CsvHelper.Excel.Core": {
+              "target": "Package",
+              "version": "[27.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

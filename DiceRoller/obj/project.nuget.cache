@@ -1,8 +1,31 @@
 {
   "version": 2,
-  "dgSpecHash": "u1HqE8USUVnxHbOYZ8KiPSfdJ58Xs7QqKuf6xkoEg93IjG83ypc51eLF45ZiLsfNv2mGvMxGwLWnETg29dXHMQ==",
+  "dgSpecHash": "ASuZooOfUUclC2Vn0baQwu5iFQFG78lEyBuDGv19vDJutTlcE7CHeXIYlwMNt72AB0pzoUhYM3Lvo9Oe/tvFKQ==",
   "success": true,
   "projectFilePath": "C:\\BI-Apps\\Source\\Personal\\Lab\\DiceRoller\\DiceRoller\\DiceRoller.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\A2010438\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\csvhelper.excel\\1.0.6\\csvhelper.excel.1.0.6.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\csvhelper.excel.core\\27.2.1\\csvhelper.excel.core.27.2.1.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\documentformat.openxml\\2.15.0\\documentformat.openxml.2.15.0.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\excelnumberformat\\1.0.10\\excelnumberformat.1.0.10.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512",
+    "C:\\Users\\A2010438\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CsvHelper.Excel 1.0.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CsvHelper.Excel",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
