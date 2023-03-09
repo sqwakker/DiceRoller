@@ -47,7 +47,7 @@ foreach (var roller in rollers)
         }
         var rate = (success / 1.0) / (iterations / 1.0); //force double
         resultDict[roller][target] = rate;
-        Console.Out.WriteLine(string.Format(printTempl, roller.GetType().Name, target, rate));
+        Console.Out.WriteLine(string.Format(printTempl, roller.Name, target, rate));
     }
 }
 
