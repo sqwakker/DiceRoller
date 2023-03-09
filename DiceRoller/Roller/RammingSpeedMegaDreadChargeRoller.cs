@@ -3,7 +3,7 @@
 class RammingSpeedMegaDreadChargeRoller : RollerBase
 {
 
-    public override string Description => "Megadread on steriods, a 4d6-discard lowest dice charge with reroll";
+    public override string Description => "Megadread on steroids, a 4d6-discard lowest dice charge with reroll";
     public override bool Success(int target)
     {
         var r = RollDices(target);
