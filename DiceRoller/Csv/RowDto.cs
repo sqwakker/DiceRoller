@@ -9,15 +9,16 @@ namespace DiceRoller.Csv
     public class RowDto
     {
         public string? RollerName { get; set; }
-        public  double Target2Rate { get; set; }
-        public double Target3Rate { get; set; }
-        public double Target4Rate { get; set; }
-        public double Target5Rate { get; set; }
-        public double Target6Rate { get; set; }
-        public double Target7Rate { get; set; }
-        public double Target8Rate { get; set; }
-        public double Target9Rate { get; set; }
-        public double Target10Rate { get; set; }
-        public double Target11Rate { get; set; }
+        public string? RollerDescription { get; set; }
+        public  double ChargeRange_2_Inches { get; set; }
+        public double ChargeRange_3_Inches { get; set; }
+        public double ChargeRange_4_Inches { get; set; }
+        public double ChargeRange_5_Inches { get; set; }
+        public double ChargeRange_6_Inches { get; set; }
+        public double ChargeRange_7_Inches { get; set; }
+        public double ChargeRange_8_Inches { get; set; }
+        public double ChargeRange_9_Inches { get; set; }
+        public double ChargeRange_10_Inches { get; set; }
+        public double ChargeRange_11_Inches { get; set; }
     }
 }
