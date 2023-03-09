@@ -10,15 +10,15 @@ namespace DiceRoller.Csv
     {
         public string? RollerName { get; set; }
         public string? RollerDescription { get; set; }
-        public  double ChargeRange_2_Inches { get; set; }
-        public double ChargeRange_3_Inches { get; set; }
-        public double ChargeRange_4_Inches { get; set; }
-        public double ChargeRange_5_Inches { get; set; }
-        public double ChargeRange_6_Inches { get; set; }
-        public double ChargeRange_7_Inches { get; set; }
-        public double ChargeRange_8_Inches { get; set; }
-        public double ChargeRange_9_Inches { get; set; }
-        public double ChargeRange_10_Inches { get; set; }
-        public double ChargeRange_11_Inches { get; set; }
+        public  double C_2_Inches { get; set; }
+        public double C_3_Inches { get; set; }
+        public double C_4_Inches { get; set; }
+        public double C_5_Inches { get; set; }
+        public double C_6_Inches { get; set; }
+        public double C_7_Inches { get; set; }
+        public double C_8_Inches { get; set; }
+        public double C_9_Inches { get; set; }
+        public double C_10_Inches { get; set; }
+        public double C_11_Inches { get; set; }
     }
 }

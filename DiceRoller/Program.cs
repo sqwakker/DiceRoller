@@ -9,20 +9,24 @@ Console.WriteLine("Hello, World!");
 
 var fileName = @"c:\temp\successful_charges.xlsx";
 
-var iterations = 100000;
+var iterations = 1000000;
 var printTempl = "Roller={0},Target={1}, Rate={2}";
 var rollers = new List<IRoller>
 {
     new NormalChargeRoller(),
     new RerollableChargeRoller(),
     new RerollOneDiceChargeRoller(),
+    new ThreeD6PickHighestChargeRoller(),
+    new ThreeD6PickHighestRerollableChargeRoller(),
     new ThreeNormalChargesMakeOneRoller(),
     new ThreeNormalChargesMakeTwoRoller(),
     new OneNormalOneThreeD6PickHighestMakeOneChargeRoller(),
+    new OneNormalOneThreeD6PickHighestMakeTwoChargeRoller(),
+    new TwoNormalOneThreeD6PickHighestMakeOneChargeRoller(),
+    new TwoNormalOneThreeD6PickHighestMakeTwoChargeRoller(),
     new HonourThePrinceChargeRoller(), 
     new HonourThePrinceRerollableChargeRoller(),
-    new ThreeD6PickHighestChargeRoller(),
-    new ThreeD6PickHighestRerollableChargeRoller()
+    new RammingSpeedMegaDreadChargeRoller()
 };
 
 var resultDict = new Dictionary<IRoller, Dictionary<int,double>>();
@@ -56,16 +60,16 @@ foreach (var resultDictKey in resultDict.Keys)
     {
         RollerName = resultDictKey.Name,
         RollerDescription = resultDictKey.Description,
-        ChargeRange_2_Inches = resultDict[resultDictKey][2],
-        ChargeRange_3_Inches = resultDict[resultDictKey][3],
-        ChargeRange_4_Inches = resultDict[resultDictKey][4],
-        ChargeRange_5_Inches = resultDict[resultDictKey][5],
-        ChargeRange_6_Inches = resultDict[resultDictKey][6],
-        ChargeRange_7_Inches = resultDict[resultDictKey][7],
-        ChargeRange_8_Inches = resultDict[resultDictKey][8],
-        ChargeRange_9_Inches = resultDict[resultDictKey][9],
-        ChargeRange_10_Inches = resultDict[resultDictKey][10],
-        ChargeRange_11_Inches = resultDict[resultDictKey][11]
+        C_2_Inches = resultDict[resultDictKey][2],
+        C_3_Inches = resultDict[resultDictKey][3],
+        C_4_Inches = resultDict[resultDictKey][4],
+        C_5_Inches = resultDict[resultDictKey][5],
+        C_6_Inches = resultDict[resultDictKey][6],
+        C_7_Inches = resultDict[resultDictKey][7],
+        C_8_Inches = resultDict[resultDictKey][8],
+        C_9_Inches = resultDict[resultDictKey][9],
+        C_10_Inches = resultDict[resultDictKey][10],
+        C_11_Inches = resultDict[resultDictKey][11]
     };
     csvRows.Add(csvRow);
 }
